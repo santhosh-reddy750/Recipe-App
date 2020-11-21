@@ -1,38 +1,164 @@
+* {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+html {
+    font-size: 50%;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2020%2F03%2F19%2Fbirria-tacos-FT-RECIPE0420-1.jpg");
+    min-width: 100%;
+    position: absolute;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-size: 8rem;
+    letter-spacing: 0.1rem;
+    background-color: #ffffff;
+    font-style: normal;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 4rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-form {
+    width: 60rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFF0;
+    border-radius: 0.5rem;
+    margin-bottom: 5rem;
+    box-shadow: 1rem 2rem 5rem #aaa;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.alert {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    background-color: rgb(192, 192, 192);
+    width: calc(100% - 0.4rem);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.alert h3 {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-form input {
+    font-size: 2.5rem;
+    border: none;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+}
+
+.search-form input[type="text"] {
+    padding: 0 0.5rem;
+    width: 60%;
+    color: #000000;
+}
+
+.search-form input[type="submit"] {
+    width: 25%;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #fff;
+}
+
+.recipes {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.recipe {
+    width: 30rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 2rem;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 2rem 3rem 5rem #aaa;
+}
+
+.recipe h2 {
+    background-color: rgba(14, 2, 2, 0.548);
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 0 0.5rem 0.5rem #555;
+    color: #fff;
+}
+
+.recipe img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.recipe a {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.recipe button {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+}
+
+.ingredient-list {
+    margin-top: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.ingredient-list li {
+    margin: 0.5rem 0;
+}
+
+.ingredient-text {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.ingredient-weight {
+    color: #000000;
+    font-size: 1.3rem;
 }
