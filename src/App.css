@@ -84,6 +84,7 @@ h1 {
     text-transform: uppercase;
     background-color: #000000;
     color: #fff;
+   padding-top: 0px;
 }
 
 .recipes {
