@@ -10,6 +10,8 @@ const Contact = () => {
       
           <label>Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+          <label>Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter email "/>
       
           
       
