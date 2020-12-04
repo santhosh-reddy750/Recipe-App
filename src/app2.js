@@ -1,3 +1,10 @@
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+ 
+import Home from './Home';
+import About from './About';
+import Contact from './/Contact';
+
 import Navigation from './Navigation';
 import App from'./App';
 import "./app2.css";
