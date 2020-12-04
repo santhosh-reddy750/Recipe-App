@@ -13,8 +13,8 @@ const Contact = () => {
       
           
       
-          <label >Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          <label >Comment</label>
+          <textarea id="Comment" name="Comment" placeholder="Write something.."></textarea>
       
           <input type="submit" value="Submit"/>
       
